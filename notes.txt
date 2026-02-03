@@ -1,0 +1,25 @@
+* directorio "public": Sirve para que pongas todo lo que pagina necesita mostrar. Como  imagenes,
+videos, cualquier archivo que se necesite mostrar.
+
+* ".postcssrc.json" -> Archivo de conf. de tailwind
+  "angular.json"  -> Archivos de conf. para angular
+  "package.json" -> Librerias para utilizar en el proyecto, tambien es posible en este archivos por
+  medio del la key "scripts", existen comandos como shorcuts para poder ejecutar en el proyecto como:
+
+   - "start" : "ng serve -o"
+   - "build" : "ng build"
+   - "watch" : "ng build --watch --configuration development"
+   - "test" : "ng test"
+   -  etc ..
+
+    estos se ejecutan con:
+    "npm run [comando]"
+
+* angular es one page application -> por que la pagina se monta en una sola, es decir en una sola
+pagina web. (Ver. https://es.wikipedia.org/wiki/Single-page_application)
+
+* TS -> JS con esteroides (lol)
+
+* el archivo  "./src/styles.css" importa los estilos de tailwind
+* el archivo  "app.config.ts"
+
