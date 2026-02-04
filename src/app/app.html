@@ -21,19 +21,19 @@
             <a href="#">Your Email</a>
             <input  class="w-60 border-2 border-black rounded-lg mt-1 mb-4"
                     type='email' tabindex='20'
-                    name='email' value='name@company.com'>
+                    name='email' placeholder='name@company.com'>
             <hr>
 
             <a href="#">Password</a>
             <input  class="w-60 border-2 border-black rounded-lg mt-1 mb-4"
                     type='password' tabindex='20'
-                    name='email' value='name@company.com'>
+                    name='email' placeholder='********'>
             <hr>
 
             <a href="#">Confirm Password</a>
             <input  class="w-60 border-2 border-black rounded-lg mt-1 mb-4"
                     type='password' tabindex='20'
-                    name='email' value='name@company.com'>
+                    name='email' placeholder='********'>
             <div class="flex">
               <p class="text-center text-shadow-black mt-1 mb-4"> <input type='checkbox'> I accepted the
               <a href="#" class="text-blue-500 font-semibold">Terms And Coditions</a>
@@ -63,14 +63,16 @@
 
   <div class="h-full w-full flex justify-center items-center dark:bg-gray-800">
   <!-- incio 02 -->
-    <div class="bg-white dark:bg-gray-800 flex justify-center items-center p-6">
-      <div class="border shadow-teal-300 shadow-md max-w-2xl p-7 rounded-lg dark:bg-gray-700 dark:text-gray-300">
-        <div class="flex gap-4 p-4">
+    <div class="bg-white dark:bg-gray-800  p-6">
+      <div class=" border shadow-teal-300 shadow-md max-w-2xl p-7 rounded-lg dark:bg-gray-700 dark:text-gray-300">
+        <div class="flex justify-center items-center gap-4 p-4">
           <img class="h-16 rounded-full w-16"
                src="img/avatar_1.jpg"/>
-            <h1 class="text-2xl ">The Man</h1>
-            <h2 class="text-2xl mb-5">@armedshutter</h2>
-            <h1 class="space-x-3 sm:ml-[10%]">***</h1>
+          <div class="flex flex-col">
+            <h1 class="text-2xl font-bold">User</h1>
+            <h2 class="text-1xl mb-2">@armedshutter</h2>
+          </div>
+            <h1 class="space-x-3 sm:ml-[10%]">*** this si a more bigger text</h1>
           <!-- text that lets you edit more to the right-->
         </div>
 
@@ -179,7 +181,63 @@
   <!-- fin 03 -->
   </div>
 
-  <div class="">04</div>
+  <!-- inicio 04 -->
+  <div class="">
+    <div class="w-full h-full flex items-center justify-center
+                dark:bg-neutral-100 px-4 sm:px-6 lg:px-8">
+      04
+      <div class="relative py-3 sm:max-w-xs sm:mx-auto">
+        <div class="min-h-96 px-8 py-6 mt-4 text-left bg-white
+                    rounded-xl shadow-lg">
+          <div class="flex flex-col justify-center items-center h-full select-none">
+            <div class="flex flex-col items-center justify-center gap-2 mb-4">
+              <a href="https://amethgalarcio.web.app/" target="_blank">
+                <img src="img/logo_galileo.png"
+                         class="w-45"
+                />
+                <!--  h-16 rounded-full w-16 -->
+              </a>
+              <span class="m-0 text-xl text-center text-[#8B8E98] mt-1">
+                Welcome Back!
+              </span>
+            </div>
+
+            <div class="w-full flex flex-col gap-2">
+              <label class="font-semibold text-xs text-gray-400 ">Username</label>
+              <input class="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none
+              dark:border-gray-500 dark:bg-neutral-150 " placeholder="Username"
+              />
+            </div>
+
+          </div>
+            <div class="w-full flex flex-col gap-2">
+              <label class="font-semibold text-xs text-gray-400">Password</label>
+              <input type="password" class="border rounded-lg px-3 py-2 mb-5 text-sm w-full
+              outline-none dark:border-gray-500 dark:bg-neutral-150" placeholder="••••••••"
+              />
+            </div>
+            <div className="mt-5">
+              <button class="py-1 px-8 bg-blue-500 hover:bg-blue-800 focus:ring-offset-blue-200
+                text-white w-full transition ease-in duration-200 text-center text-base font-semibold
+                shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer select-none">Login
+              </button>
+            </div>
+            <hr class="mt-5 mb-5">
+              <div class="flex justify-between items-center gap-8">
+                <p class="font-semibold text-[11px] text-blue-400 ">
+                Dont have an account?</p>
+                <p class="font-semibold text-[11px] text-gray-400">
+                Forgot Password?</p>
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+  <!-- fin 04 -->
+  </div>
+
 </div>
 
 <router-outlet />
