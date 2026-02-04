@@ -11,7 +11,7 @@
   <div class="h-full w-full flex justify-center items-center bg-stone-200 mb-4">
     01
   <!-- inicio 01 -->
-    <fieldset class="text-xl max-w-sm border-0.5 rounded-xl p-4 bg-stone-300 min-h-96 px-8 py-6">
+    <fieldset class="text-xl max-w-sm border-0.5 rounded-xl shadow-lg p-4 bg-stone-300 min-h-96 px-8 py-6">
 
         <div class="flex flex-col gap-2 px-2 text-shadow-md font-serif">
 
@@ -21,34 +21,31 @@
 
             <hr class="opacity-40 mb-2">
 
-            <p class="text-[18px]">
+            <p class="text-[#8B8E98] text-[18px]">
             Your Email
             </p>
 
-            <input  class="w-60 border dark:border-gray-500 rounded-lg mt-1 mb-4 dark:bg-neutral-200"
+            <input  class="w-60 border dark:border-gray-500 rounded-lg mt-1 mb-4"
                     type='email' tabindex='20'
                     name='email' placeholder='name@company.com'>
 
             <hr class="opacity-40 mb-2">
 
-            <p class="text-[18px]">
-            Password
-            </p>
-            <input  class="w-60 border dark:border-gray-500 rounded-lg mt-1 mb-4 dark:bg-neutral-200"
+            <a href="#">Password</a>
+            <input  class="w-60 border dark:border-gray-500 rounded-lg mt-1 mb-4"
                     type='password' tabindex='20'
                     name='email' placeholder='********'>
 
             <hr class="opacity-40 mb-2">
 
-            <p class="text-[18px]">
-            Confirm Password
-            </p>
-            <input  class="w-60 border dark:border-gray-500 rounded-lg mt-1 mb-4 dark:bg-neutral-200"
+            <a href="#">Confirm Password</a>
+            <input  class="w-60 border dark:border-gray-500 rounded-lg mt-1 mb-4"
                     type='password' tabindex='20'
                     name='email' placeholder='********'>
             <div class="flex">
-              <p class="text-center mt-1 mb-4"> <input type='checkbox'> I accepted the
+              <p class="text-center text-shadow-black mt-1 mb-4"> <input type='checkbox'> I accepted the
               <a href="#" class="text-blue-500 font-semibold">Terms And Coditions</a>
+
               </p>
 
               <!--
@@ -58,7 +55,7 @@
                -->
 
             </div>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-1 mb-4 rounded-2xl">Create an acccount</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-1 mb-4">Create an acccount</button>
 
             <div class="flex">
               <p class="text-center text-shadow-black mt-1 mb-4">Already have an account?
