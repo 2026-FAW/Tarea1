@@ -1,1 +1,254 @@
-Hola esta es una prueba
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - 4 Cuadrantes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0">
+        
+        <!-- CUADRANTE I: Formulario de Creación de Cuenta -->
+        <div class="flex items-center justify-center p-8 bg-white border border-gray-200">
+            <div class="w-full max-w-md">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-6">Create and account</h2>
+                
+                <form class="space-y-4">
+                    <!-- Email Input -->
+                    <div class="space-y-2">
+                        <label for="email" class="block text-sm font-medium text-gray-700">
+                            Your email
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="name@company.com"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="space-y-2">
+                        <label for="password" class="block text-sm font-medium text-gray-700">
+                            Password
+                        </label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            placeholder="••••••••"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Confirm Password Input -->
+                    <div class="space-y-2">
+                        <label for="confirm-password" class="block text-sm font-medium text-gray-700">
+                            Confirm password
+                        </label>
+                        <input 
+                            type="password" 
+                            id="confirm-password" 
+                            placeholder="••••••••"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="flex items-center gap-2 py-2">
+                        <input 
+                            type="checkbox" 
+                            id="terms" 
+                            class="w-4 h-4 rounded border-gray-300 cursor-pointer"
+                            required
+                        >
+                        <label for="terms" class="text-sm text-gray-600 cursor-pointer">
+                            I accept the <a href="#" class="text-blue-500 hover:underline">Terms and Conditions</a>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300 mt-6"
+                    >
+                        Create an account
+                    </button>
+
+                    <!-- Footer Link -->
+                    <div class="text-center text-sm text-gray-600 pt-4">
+                        Already have an account? <a href="#" class="text-blue-500 hover:underline font-medium">Login here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- CUADRANTE II: Tarjeta de Proyecto -->
+        <div class="flex items-center justify-center p-8 bg-white border border-gray-200">
+            <div class="w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden">
+                <!-- Header -->
+                <div class="flex items-center justify-between p-4 border-b border-gray-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white font-bold text-lg">
+                            C
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 text-sm">Csaba</h3>
+                            <p class="text-xs text-gray-500">@csaba_kissi</p>
+                        </div>
+                    </div>
+                    <button class="text-gray-300 hover:text-gray-500 text-xl">🔗</button>
+                </div>
+
+                <!-- Content -->
+                <div class="p-4">
+                    <!-- Gradient Background -->
+                    <div class="w-full h-28 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl mb-4"></div>
+
+                    <!-- Badge -->
+                    <div class="inline-block bg-green-500 text-white text-xs font-bold px-3 py-1 rounded mb-3">
+                        Programming
+                    </div>
+                    <p class="text-xs text-gray-400 block mb-2">24 Jul 2023</p>
+
+                    <!-- Title -->
+                    <h4 class="text-lg font-semibold text-gray-900 mb-3">Landing page - Front-end</h4>
+
+                    <!-- Meta Info -->
+                    <div class="flex items-center gap-6 text-sm text-gray-600 mb-3">
+                        <div class="flex items-center gap-1">
+                            <span>👤</span>
+                            <span>2</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <span>💬</span>
+                            <span>2</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <span>⏱️</span>
+                            <span>00:34</span>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="w-full bg-gray-200 rounded-full h-1.5 mb-2 overflow-hidden">
+                        <div class="bg-green-500 h-full rounded-full" style="width: 45%"></div>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-4">Est: 2:00 h</p>
+
+                    <!-- Tags -->
+                    <div class="flex gap-2">
+                        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full font-medium">
+                            widget
+                        </span>
+                        <span class="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full font-medium">
+                            responsive
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CUADRANTE III: Tarjeta de Perfil -->
+        <div class="flex items-center justify-center p-8 bg-white border border-gray-200">
+            <div class="w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden text-center">
+                <!-- Banner -->
+                <div class="w-full h-32 bg-gradient-to-br from-sky-300 to-purple-200"></div>
+
+                <!-- Avatar -->
+                <div class="flex justify-center -mt-16 mb-4">
+                    <div class="w-24 h-24 rounded-full border-4 border-white bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white text-4xl shadow-md">
+                        👩
+                    </div>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="px-6 pb-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-1">Sarah Smith</h3>
+                    <p class="text-gray-500 text-sm mb-6">Freelance Web Designer</p>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 py-6 border-t border-b border-gray-100">
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">⭐</div>
+                            <p class="font-bold text-gray-900 text-lg">2k</p>
+                            <p class="text-xs text-gray-500">Stars</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">👥</div>
+                            <p class="font-bold text-gray-900 text-lg">10k</p>
+                            <p class="text-xs text-gray-500">Followers</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">🎯</div>
+                            <p class="font-bold text-gray-900 text-lg">15</p>
+                            <p class="text-xs text-gray-500">Projects</p>
+                        </div>
+                    </div>
+
+                    <!-- Follow Button -->
+                    <button class="w-full mt-6 bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 rounded-full transition duration-300">
+                        Follow
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CUADRANTE IV: Login -->
+        <div class="flex items-center justify-center p-8 bg-gradient-to-br from-gray-100 to-gray-200 border border-gray-200">
+            <div class="w-full max-w-md bg-white rounded-lg shadow-xl p-8">
+                <!-- Logo -->
+                <div class="text-center mb-8">
+                    <h1 class="text-2xl font-bold text-blue-600">📡 PingPing</h1>
+                </div>
+
+                <!-- Title -->
+                <div class="text-center mb-8">
+                    <h2 class="text-xl font-semibold text-gray-900">WELCOME BACK!</h2>
+                </div>
+
+                <!-- Form -->
+                <form class="space-y-4">
+                    <!-- Email Input -->
+                    <div>
+                        <input 
+                            type="email" 
+                            placeholder="E-Mail"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Password Input -->
+                    <div>
+                        <input 
+                            type="password" 
+                            placeholder="••••••••••••••"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition"
+                            required
+                        >
+                    </div>
+
+                    <!-- Login Button -->
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-300 mt-6"
+                    >
+                        LOGIN
+                    </button>
+                </form>
+
+                <!-- Footer Links -->
+                <div class="flex justify-between text-sm mt-6">
+                    <a href="#" class="text-blue-600 hover:underline">Don't have an account?</a>
+                    <a href="#" class="text-gray-600 hover:underline">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
