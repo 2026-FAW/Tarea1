@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Tarea1": {
+    "MI-Primer-Proyecto": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Tarea1:build:production"
+              "buildTarget": "MI-Primer-Proyecto:build:production"
             },
             "development": {
-              "buildTarget": "Tarea1:build:development"
+              "buildTarget": "MI-Primer-Proyecto:build:development"
             }
           },
           "defaultConfiguration": "development"
