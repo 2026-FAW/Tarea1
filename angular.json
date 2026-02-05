@@ -2,11 +2,12 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "087bf714-59f1-43d2-92f4-6e102cdba23d"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Tarea1": {
+    "tarea1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -22,11 +23,20 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets"
               }
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -56,10 +66,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Tarea1:build:production"
+              "buildTarget": "tarea1:build:production"
             },
             "development": {
-              "buildTarget": "Tarea1:build:development"
+              "buildTarget": "tarea1:build:development"
             }
           },
           "defaultConfiguration": "development"
